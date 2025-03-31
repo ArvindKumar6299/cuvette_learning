@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .vid1{
+            float: left;
+            margin-right: 10px;
+        }
+        .vid2 {
+            
+            display: inline-block;
+            vertical-align: top;
+            padding: 0 1em;
+            
+        }
+        .vid2 video{
+            float: left;
+        }
+        .vid3{
+          
+            display: flex;
+            align-items: center;  /* Align video and text vertically */
+            gap: 1px;
+            margin-bottom: 20px;
+            padding-top: 0;
+            margin-top: 0;
+
+        }
+        .vid2 ul{
+            list-style:none;
+        }
+
+        .vid3 span{
+            font-weight: bold;
+        }
+
+    .vid3 p{
+        margin : 0;
+    }
+    h2{
+        text-align:center;
+    }
+        
+    </style>
+</head>
+<body>
+    <h2>Welocome to Arvind's Album</h2>
+
+    <div class="vid1">
+      <video height="300px" width="600" controls autoplay loop>
+        <source  src="./1903270-uhd_1920_1440_30fps.mp4"/>
+      </video>
+      <h4>Prime time best video , you should watch this..</h4>
+    </div>
+
+    <div  class="vid2">
+        <ul>
+
+    <li class="vid3">
+        <video height="200" width="200" controls autoplay loop >
+            <source src="./5538137-hd_1920_1080_25fps.mp4" />
+        </video>
+        
+        <p>
+            <span>video 1</span>
+            <br>
+            Lorem, ipsum dolor sit amet
+             consectetur adipisicing elit.
+        </p>
+    </li>
+    <li class="vid3">
+        <video height="200" width="200" controls autoplay loop >
+            <source src="./5752729-uhd_3840_2160_30fps.mp4" />
+        </video>
+        <p>
+            <span>video 2</span>
+            <br>
+            Lorem, ipsum dolor sit amet consectetur
+             adipisicing elit.
+        </p>
+    </li>
+    <li class="vid3">
+        <video height="200" width="200" controls autoplay loop>
+            <source src="./854169-hd_1920_1080_25fps.mp4" />
+        </video>
+        <p>
+            <span>video 3</span>
+            <br>
+            Lorem, ipsum dolor sit amet 
+            consectetur adipisicing elit.
+        </p>
+    </ul>
+    </div>
+
+    </div>
+
+</body>
+</html>

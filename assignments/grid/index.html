@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .grid-container{
+            padding: 10px;
+            background-color: aqua;
+            display: grid;
+            /* grid-template-columns:100px 100px; */
+            grid-template-columns:repeat(3,1fr);
+            /* grid-template-rows: 100px 100px 100px; */
+            grid-auto-rows: minmax(200px, auto);
+            /* grid-column-gap:10px;
+            grid-row-gap:10px; */
+            grid-gap:10px;
+            /* grid-template-areas: 
+            "header header header"  --* for header taking 3columns *
+             "sidebar content content"
+              "sidebar content content"; */
+              /* for sidebar - i am taking two rows and , for content two rows and two cols  ,*/
+             height: 100vh;
+             /* justify-content: center;  aligning them horizontaly */
+             /* justify-content: start;  it will at start part  */
+             align-items: center; 
+        }
+        .grid-item{
+            background-color: rgba(255, 255,255,0.8);
+            border: 1px solid orange;
+            padding: 20px;
+            text-align:center;
+        }
+        /* .item-1{
+            grid-area: header;
+        }
+        .item-2{
+            grid-area:sidebar;
+        }
+        .item-3{
+            grid-area:content; 
+        }  */
+
+         /* another mtd  */
+         .item-1{
+            grid-column-start: 1;
+            grid-column-end:-1;
+         }
+         .item-2{
+            grid-column-start: 1;
+            grid-column-end:-1; 
+             grid-row-start: 1;
+            grid-row-end:3;
+         }
+         .item-3{
+            grid-column-start: 2;
+            grid-column-end:4;
+            grid-row-start: 1;
+            grid-row-end:3;
+         }
+         .item1{
+            grid-column: 1/4;
+            grid-row: span 2;
+         }
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item item-1">1</div>
+        <div class="grid-item item-2">2</div>
+        <div class="grid-item item-3">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment1</title>
+    <style>
+        h4{
+            color: rgb(14, 73, 225);
+            font-size: xx-large;
+            background-color: pink;
+            text-align: center;
+        }
+
+        p::before {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: green;
+            border: none;
+        }
+        p::after{
+            content: 'new message deleverd';
+            background-color: grey;
+            color: black;
+            opacity: 0.5;
+            border: none;
+            border-radius: 50px;
+            margin-left: 9px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h4>Write a program to create a input field to take password as input.</h4>
+
+    <br><br>
+    Enter Password:
+    <input type="password" placeholder="password">
+
+    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, ipsa?</p>
+</body>
+</html>
