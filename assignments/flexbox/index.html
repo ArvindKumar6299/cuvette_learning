@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            background-color: rgb(203, 245, 231);
+            display:flex; /* To make item flexible and align as per your need*/
+            flex-direction: row;
+            align-items: start;
+            /* justify-content: space-between;
+            align-items: center; */
+            height:500px;
+        }
+        .flex-container>div{
+            background-color: rgb(12, 247, 247);
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+        #item-1{
+            flex-shrink: 0;
+            align-self: end;
+            order: 2;
+        }
+        #item-2{
+            flex-grow:2;
+            flex-basis: 0;
+            align-self:center;
+
+        }
+        #item-3{
+            flex-grow:1;
+            align-self: top;
+            order:1;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div id="item-1">1</div>
+        <div id="item-2">2</div>
+        <div id="item-3">3</div>
+    </div>
+</body>
+</html>
