@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+
+        /* Transition Property */
+        /* body{
+            display:flex;  to make element flexible to changeits position dinamically 
+            justify-content: center;    aligns the flex items horizontally (left to right) 
+            align-items: center;   aligns the flex items vertically (top to bottom) 
+        }
+        .box{
+            height:200px;
+            width:200px;
+            background-color:orange ;
+            margin:100px; 
+            /* transition: width 2s; 
+            transition: width 2s, height 2s;
+            transition-timing-function: ease-in;
+            transition-delay: 2s;
+            transition: transform 2s linear 1s;
+        }
+        .box:hover{
+            width: 500px;
+            height:300px;
+            background-color: blueviolet;
+        }
+
+        Transform 
+        .box:hover{
+            transform:rotate(30deg);
+        } */
+
+        /* Animation - to make  element perform some action with using javascript*/
+        .box{
+            height:200px;
+            width:200px;
+            background-color:orange ;
+            margin:100px;
+            animation-name: example;
+            animation-duration: 6s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+            animation-timing-function: linear;
+        }
+        @keyframes example{
+            /* from {background-color:orange;}
+            to  {background-color: blue;} */
+            0% {background-color:orange; width:200px}
+            25%  {background-color: rgb(255, 0, 251); width: 300px;}
+            50%  {background-color: rgb(140, 255, 0); width:400px;}
+            100%  {background-color: blue; width:200px;}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

@@ -239,3 +239,9 @@ li a:hover {
     </div>
 </div>
  ```
+
+
+ ##
+ Property	Aligns Items Along	Affects	Example
+justify-content	Main Axis (horizontal in row, vertical in column)	Item placement along the main axis	Distributes items left, center, or right in a row
+align-items	Cross Axis (perpendicular to main axis)	Item alignment within their flex container	Aligns items at the top, center, or bottom
