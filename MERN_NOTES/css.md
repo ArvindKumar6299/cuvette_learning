@@ -245,3 +245,20 @@ li a:hover {
  Property	Aligns Items Along	Affects	Example
 justify-content	Main Axis (horizontal in row, vertical in column)	Item placement along the main axis	Distributes items left, center, or right in a row
 align-items	Cross Axis (perpendicular to main axis)	Item alignment within their flex container	Aligns items at the top, center, or bottom
+
+## positon: relative 
+--> The position: relative property in CSS is used to position an element relative to its normal position. This means:
+
+The element will stay in the document flow, ``but we can move it using top, left, right, or bottom.``
+example code -   
+```css
+  .box {
+    position: relative;
+    top: 20px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+ ```

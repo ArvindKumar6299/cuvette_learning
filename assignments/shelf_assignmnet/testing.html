@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.shelf-container {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    perspective: 800px;
+}
+
+.shelf {
+    position: absolute;
+    width: 200px;
+    height: 5px;
+    background-color: black;
+    left: 0;
+}
+
+.shelf1 { top: 0; }
+.shelf2 { top: 75px; }
+.shelf3 { top: 150px; }
+.shelf4 { top: 225px; }
+
+.sides {
+    position: absolute;
+    width: 10px;
+    height: 300px;
+    background-color: black;
+    top: 0;
+}
+
+.left {
+    left: -5px;
+    transform: rotateY(-30deg);
+}
+
+.right {
+    right: -5px;
+    transform: rotateY(30deg);
+}
+
+.top {
+    position: absolute;
+    width: 200px;
+    height: 10px;
+    background-color: black;
+    top: -5px;
+    transform: rotateX(60deg);
+}
+
+.bottom {
+    position: absolute;
+    width: 200px;
+    height: 10px;
+    background-color: black;
+    bottom: -5px;
+    transform: rotateX(-60deg);
+}
+
+    </style>
+</head>
+<body>
+    <div class="shelf-container">
+        <div class="shelf shelf1"></div>
+        <div class="shelf shelf2"></div>
+        <div class="shelf shelf3"></div>
+        <div class="shelf shelf4"></div>
+        <div class="sides left"></div>
+        <div class="sides right"></div>
+        <div class="top"></div>
+        <div class="bottom"></div>
+    </div>
+</body>
+</html>

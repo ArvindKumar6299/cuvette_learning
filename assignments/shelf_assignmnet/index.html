@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShelfSheet</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        body{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            /* align-items: center; */
+            /* margin-top: 50px; */
+        }
+        .container{
+            
+            height: 600px;
+            width:300px;
+            /* position:relative; */
+        }
+        .line{
+            /* position:absolute;
+            border: 4px solid black;
+            height: 2px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 200px; */
+        }
+        .line-1{
+            border: 2px solid black;
+            height: 25px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .line-2,.line-3,.line-4,.line-5,.line-6{
+            border: 2px solid black;
+            height: 25px;
+            margin-bottom:20px ;
+            perspective: 800px;
+            transform: rotateX(90deg) rotateY(0deg) ;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+        <div class="line line-4"></div>
+        <div class="line line-5"></div>
+        <div class="line line-6"></div>
+        <div class="line line-left"></div>
+        <div class="line line-right"></div>
+    </div>
+</body>
+</html>

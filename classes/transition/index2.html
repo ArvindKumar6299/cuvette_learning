@@ -14,8 +14,26 @@
             /* transform: scale(2,3); */
             /* transform: scaleX(2);
             transform: skew(20deg,20deg); */
-            transform: rotateX(150deg);
+            /* transform: rotateX(150deg); */
 
+        }
+
+        @media screen and (min-width:480px){
+            .box{
+                background-color: blueviolet;
+            }
+        }
+        @media screen and (max-width:780px){
+            .box{
+                background-color: brown;
+                height: 100px;
+                width: 100px;
+            }
+        }
+        @media screen and (orientation:portrait){
+            .box{
+                background-color: blueviolet;
+            }
         }
     </style>
 </head>

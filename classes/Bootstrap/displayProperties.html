@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Properties</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <style>
+        .box{
+            height:100px;
+            width:100px;
+            background-color: blueviolet;
+            border : 1px solid red;
+        }
+        .d-flex{
+            background-color: aquamarine;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <table class="table table-dark table-striped table-hover table-bordered
+     border-primary table-sm table-responsive-sm">
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Gender</td>
+                <td>DOB</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mark</td>
+                <td>M</td>
+                <td>1 jan 1992</td>
+            </tr>
+            <tr>
+                <td>jacob</td>
+                <td>F</td>
+                <td>4 sep 1899</td>
+            </tr>
+            <tr>
+                <td>Smith</td>
+                <td>M</td>
+                <td>5 jan 2000</td>
+            </tr>
+        </tbody>
+    </table>
+    <!--  -->
+      <div class="d-flex flex-row justify-content-around align-items-lg-center">
+        <div class="box">First</div>
+        <div class="box">Second</div>
+        <div class="box">Third</div>
+      </div>
+    <!--  -->
+    <div class="box d-block d-xs-none">Arvind</div>
+    <div class="box d-inline-block">Dipu</div>
+</body>
+</html>
