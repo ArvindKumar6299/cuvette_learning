@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-900 h-screen text-white scroll-smooth">
+    
+        <nav class="flex p-2 justify-between items-center mx-auto sticky">
+           
+            <img class="w-16 rounded-4xl shadow-4xl" src="./images.png" alt="">
+           
+           <div class="md:gap-3 md:text-xl ">
+            <ul class="hidden md:flex ">
+                <li class="md:px-4  hover:text-green-700 hover:text-2xl"><a href="#home">Home</a></li>
+                <li class="md:px-4  hover:text-green-700 hover:text-2xl"><a href="#about">About Me</a></li>
+                <li class="md:px-4  hover:text-green-700 hover:text-2xl"><a href="#projects">Projects</a></li>
+                <li class="md:px-4  hover:text-green-700 hover:text-2xl"><a href="#contact">Contact</a></li>
+            </ul>
+           </div>
+           <div class="text-white text-2xl md:hidden px-8">
+            <i class="fa-solid fa-bars"></i>
+           </div>
+        </nav>
+
+         <!-- hero section -->
+       <div id="home" class=" relative h-[500px] bg-cover flex w-[100vw] flex-col items-center justify-center text-center sm:text-2xl" style="background-image: url(./background.png);">
+           <h1 class="text-2xl">"Hello, I'm Arvind Kumar"</h1> 
+            <p>Building seamless web experiences from front to back.</p>
+            <button class="px-4 py-2 bg-yellow-500 text-red-600 text-2xl cursor-pointer rounded-2xl md:px-7 md:py-4 font-bold shadow-2xl mt-4 hover:text-white  hover:bg-green-600 hover:text-orange-400 shadow-2xl drop-shadow-2xl shadow-green-800">View My Work</button>
+    </div>
+
+    <!-- About Me section -->
+     <div id="about" class="grid md:grid-cols-2 m-10  gap-4">
+        <img class="rounded-2xl w-[75%] object-cover" src="./download.jpeg" alt="">
+        <div>
+            <p class="text-2xl">Hi! I'm <span class="text-red-500">Arvind Kumar</span>, a tech enthusiast with a strong passion for building innovative solutions and solving real-world problems through technology. I specialize in [your area — e.g., web development, software engineering, backend development, etc.] and love turning ideas into functional, user-friendly applications.</p>
+            <div>
+                <h2 class="text-2xl text-orange-500 pt-5 font-bold  ">Skills :</h2>
+                <div class="grid grid-cols-2 text-xl mt-2 text-green-600 mb-10">
+                    <div class="flex flex-col">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JAVASCRIPT</li>
+                            <li>TAILWIND</li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col">
+                        <ul>
+                            <li>REACT</li>
+                            <li>EXPRESS</li>
+                            <li>NODEJS</li>
+                            <li>MONGODB</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+       
+<!-- Project section  -->
+ <div id="projects" class="flex flex-col gap-4  md:grid md:grid-cols-3 ml-[20px] ">
+    <div class="p-[5px] md:p-[20px] md:py-10 bg-amber-200 mx-5 rounded-2xl flex flex-col justify-center text-center items-center">
+        <img class="h-[200px] w-[200px] justify-center items-center rounded-3xl" src="./images.jpeg" alt="">
+        <h3 class="text-xl text-orange-500 font-bold mt-2">Travel Toor Website</h3>
+        <p class="text-blue-900 text-xl">This webpage is developed using technologies HTML , CSS , Javascript , Reactjs </p>
+        <a class="text-xl text-rose-500 font-bold bg-green-400 rounded-2xl px-5 mt-2 hover:bg-green-800 hover:text-white py-1" href="https://unsplash.com/s/photos/travel-tour">Click to view</a>
+    </div>
+    <div class="p-[5px] md:p-[20px] md:py-10 bg-amber-200 mx-5 rounded-2xl flex flex-col justify-center text-center items-center">
+        <img class="h-[200px] w-[200px] justify-center items-center rounded-3xl" src="./video-conferencing.jpeg" alt="">
+        <h3 class="text-xl text-orange-500 font-bold mt-2">Video Conferencing</h3>
+        <p class="text-blue-900 text-xl">This webpage is developed using technologies HTML , CSS , Javascript , Reactjs, Nextjs </p>
+        <a class="text-xl text-rose-500 font-bold bg-green-400 rounded-2xl px-5 mt-2 hover:bg-green-800 hover:text-white py-1" href="https://unsplash.com/s/photos/travel-tour">Click to view</a>
+
+    </div>
+    <div class="p-[5px] md:p-[20px] md:py-10 bg-amber-200 mx-5 rounded-2xl flex flex-col justify-center text-center items-center">
+        <img class="h-[200px] w-[200px] justify-center items-center rounded-3xl" src="./music.jpeg" alt="">
+        <h3 class="text-xl text-orange-500 font-bold mt-2">Music Player</h3>
+        <p class="text-blue-900 text-xl">This webpage is developed using technologies HTML , CSS , Javascript </p>
+        <a class="text-xl text-rose-500 font-bold bg-green-400 rounded-2xl px-5 mt-2 hover:bg-green-800 hover:text-white py-1" href="https://unsplash.com/s/photos/travel-tour">Click to view</a>
+
+    </div>
+
+ </div>
+    
+ <!-- contact form -->
+  <div id="contact" class="flex justify-center ">
+  <form  class="md:w-[70%] divide-y-2 divide-red-800 flex relative flex-col justify-center items-center mx-20 mt-[20px] gap-10 mb-7">
+    <div class="w-full flex bg-white text-blue-950 px-20 py-4  text-center gap-10 rounded-xl md:px-[50px] hover:border-2 hover:border-amber-600">
+        <label class="text-xl text-blue-950 " for="name">Name: </label>
+    <input class="hover:px-[40px] hover:border-amber-300 hover:py-[10px]" name="name" id="name" type="text" placeholder="enter your name">
+    </div>
+    <div class="w-full flex  bg-white text-blue-950 px-20 py-4  text-center gap-10 rounded-xl md:px-[50px] hover:border-2 hover:border-amber-600">
+    <label class="text-xl text-blue-950 "  for="email">Email: </label>
+    <input class="hover:px-[40px] hover:py-[10px]" type="email" name="email" id="email" placeholder="enter your email">
+    </div>
+    <div class="w-full flex  bg-white text-blue-950 px-20 py-4 text-center gap-10 rounded-xl md:px-[50px] hover:border-2 hover:border-amber-600">
+    <label class="text-xl text-blue-950 " for="text">Message: </label>
+    <textarea rows="4" class="text-xl text-blue-950 hover:px-[20px] border-0 w-full" type="text" name="text" id="text" placeholder="Write your message .. " > </textarea>>
+   </div>
+   <div class="flex justify-end float-right ml-2">
+   <button class=" bg-amber-600 text-2xl font-bold text-white rounded-2xl px-10 py-2 hover:bg-green-600 hover:text-orange-400 shadow-2xl drop-shadow-2xl shadow-green-800">Submit</button>
+   </div>
+   
+  </form>
+</div>
+
+   <!-- footer section  -->
+    <div class="w-[100vw] h-[70px]  text-white bg-black text-center py-5">
+        "A copyright notice © 2025 Arvind Kumar Privacy Policy , Terms of Service"
+    </div>
+</body>
+</html>

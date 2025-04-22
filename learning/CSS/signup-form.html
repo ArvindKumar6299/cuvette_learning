@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .container{
+            display: inline-block;
+        }
+        .container-1{
+            width: 700px;
+            height: 300px;
+            display: inline-block;
+            /* object-fit: cover; */
+           
+        }
+        .line-1{
+            display: inline;
+            padding: 10px 10px;
+            font-size: larger;
+            border-radius: 10px;
+            margin-bottom: 5px;
+        }
+        .line-2{
+            font-size: larger;
+            display: block;
+            width: 500px;
+            padding: 10px 10px;
+            border-radius: 10px;
+        }
+        .signup-btn{
+            padding:10px;
+            margin: 5px;
+            background-color: rgb(102, 102, 239);
+            font-size: larger;
+            width: 520px;
+            border-radius: 10px;
+        }
+        br{
+            margin: 0px;
+        }
+        .container-2{
+            width: 600px;
+            display: block;
+            object-fit: cover;
+        }
+        .uber-input{
+            display: block;
+            font-size: larger;
+            padding: 13px 13px;
+            width: 100%;
+            margin-bottom: 5px;
+            border: none;
+            background-color: rgb(216, 216, 216);
+        }
+        h1{
+            font-size: 40px;
+        }
+        .btn-1,.btn-2{
+            display: inline;
+            width: 200px;
+            padding: 13px 13px;
+            font-size: larger;
+            margin: 5px;
+            border: none;
+        }
+        .btn-1{
+            background-color: black;
+            color: white;
+            font-weight: bold;
+        }
+        .btn-2{
+            color:black;
+            font-weight:bold;
+            background-color: rgb(222, 221, 221);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <!-- Sign up form -->
+     <div class="container-1">
+        <input class="line-1" type="text" placeholder="First name">
+        <input class="line-1" type="text" placeholder="Last name">
+        <input class="line-2" type="text" placeholder="Email">
+        <button class="signup-btn">Sign Up</button>
+     </div>
+    
+     <br>
+
+     <!-- Uber request-a-ride form -->
+     <div class="container-2">
+        <h1>Request a ride now</h1>
+        <input type="text" class="uber-input" placeholder="Enter pickup location">
+        <input type="text" class="uber-input" placeholder="Enter destination">
+        <button class="btn-1">Request now</button>
+        <button class="btn-2">Schedule for later</button>
+     </div>
+     
+    </div>
+</body>
+</html>

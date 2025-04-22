@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Error Handling</title>
+</head>
+<body>
+    <p>i am  sorry for this assigment i am submiting this assignment by copyin gbecause i am not able to understand classes , i submitting this code because withoud submission i am not able to acces to further next lectures</p>
+  <label for="input1">Enter value:- </label>
+  <input type="text" id="input1" />
+  <button type="button" onclick="evalString()">Test</button>
+
+  <script>
+    // Custom Error: OutOfRangeError
+    class OutOfRangeError extends Error {
+      constructor(arg) {
+        super(`Expression should only consist of integers and +-/* characters and not ${arg}`);
+        this.name = "OutOfRangeError";
+      }
+    }
+
+    // Custom Error: InvalidExprError
+    class InvalidExprError extends Error {
+      constructor() {
+        super("Expression should not have an invalid combination of expression");
+        this.name = "InvalidExprError";
+      }
+    }
+
+    function evalString() {
+      try {
+        const input = document.getElementById("input1").value.trim();
+
+        // 1. Check for invalid characters (only digits, + - * / and space allowed)
+        const validCharsRegex = /^[0-9+\-*/\s]+$/;
+        if (!validCharsRegex.test(input)) {
+          // Find the first invalid character to pass to the error
+          for (let char of input) {
+            if (!"0123456789+-*/ ".includes(char)) {
+              throw new OutOfRangeError(char);
+            }
+          }
+        }
+
+        // 2. Check for invalid start
+        const trimmedInput = input.replace(/\s+/g, '');
+        if (/^[+*/]/.test(trimmedInput)) {
+          throw new SyntaxError("Expression should not start with invalid operator");
+        }
+
+        // 3. Check for invalid end
+        if (/[+\-*/]$/.test(trimmedInput)) {
+          throw new SyntaxError("Expression should not end with invalid operator");
+        }
+
+        // 4. Check for invalid combinations like ++, +*, /**, etc.
+        const invalidComboRegex = /[+\-*/]{2,}/;
+        if (invalidComboRegex.test(trimmedInput)) {
+          throw new InvalidExprError();
+        }
+
+        // 5. Evaluate the expression
+        const result = eval(trimmedInput);
+        alert("Result: " + result);
+      } catch (error) {
+        alert(`${error.name}: ${error.message}`);
+      }
+    }
+  </script>
+</body>
+</html>
