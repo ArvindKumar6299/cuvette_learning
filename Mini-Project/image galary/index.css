@@ -1,0 +1,27 @@
+.grid-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-gap:10px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+  
+   }
+   .image{
+    width: 50%;
+    cursor: pointer;
+   }
+   .expanded-view{
+    display: none;  /* hidden by default */
+    position: fixed;
+    z-index: 100;  /* sit on top */
+    width: 100%;
+    height: 100%;
+    top: 0;
+   }
+   #expandedImg{
+    margin:auto;
+    display: block;
+    width: 80%;
+    max-width: 900px;
+   }
