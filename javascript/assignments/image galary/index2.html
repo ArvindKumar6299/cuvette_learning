@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Grid Expand</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding: 10px;
+      transition: transform 0.5s ease;
+    }
+
+    .thumb {
+      width: 100%;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      object-fit: cover;
+      aspect-ratio: 1/1;
+    }
+
+    .expanded-view {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s ease;
+    }
+
+    .expanded-view img {
+      max-width: 90%;
+      max-height: 90%;
+      border: 5px solid white;
+      border-radius: 10px;
+    }
+
+    .expanded-view.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  </style>
+</head>
+<body>
+
+<div class="gallery">
+  <img src="https://via.placeholder.com/300" class="thumb" data-full="https://via.placeholder.com/1000">
+  <img src="https://via.placeholder.com/301" class="thumb" data-full="https://via.placeholder.com/1001">
+  <img src="https://via.placeholder.com/302" class="thumb" data-full="https://via.placeholder.com/1002">
+  <img src="https://via.placeholder.com/303" class="thumb" data-full="https://via.placeholder.com/1003">
+  <img src="https://via.placeholder.com/304" class="thumb" data-full="https://via.placeholder.com/1004">
+  <img src="https://via.placeholder.com/305" class="thumb" data-full="https://via.placeholder.com/1005">
+</div>
+
+<div class="expanded-view" id="expandedView">
+  <img src="" alt="Expanded Image" id="expandedImg">
+</div>
+
+<script>
+  const thumbs = document.querySelectorAll('.thumb');
+  const expandedView = document.getElementById('expandedView');
+  const expandedImg = document.getElementById('expandedImg');
+
+  thumbs.forEach(thumb => {
+    thumb.addEventListener('click', () => {
+      expandedImg.src = thumb.dataset.full;
+      expandedView.classList.add('show');
+    });
+  });
+
+  expandedView.addEventListener('click', () => {
+    expandedView.classList.remove('show');
+  });
+</script>
+
+</body>
+</html>
