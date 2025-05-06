@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Online Notepad</title>
+    </head>
+    <style>
+       *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       }
+       #textarea{
+        padding: 5px;
+        width: 100%;
+        height: 60vh;
+        font-size: 1rem;
+        overflow: scroll;
+        border: 2px solid green;
+        border-radius: 10px;
+        margin: 10px;
+       }
+       #textarea:focus{
+        outline-style:none;
+       }
+       .auto-save-box{
+        color: rgb(24, 44, 222);
+        font-weight: 900;
+        padding-left: 20px;
+       }
+       #feature-flag{
+        border: 2px solid green;
+        margin: 10px;
+       }
+    </style>
+    <body>
+        <div class="container">
+            <div class="notepad">
+                <h2 style="text-align: center; color: red; margin: 10px;">Online Notepad</h2>
+                <div class="auto-save-box">
+                    <label for="feature-flag">Save My Code</label>
+                    <input type="checkbox" id="feature-flag" name="save my code">
+                </div>
+                <div>
+                    <textarea name="textarea" id="textarea" placeholder="Write your notes here"></textarea>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
