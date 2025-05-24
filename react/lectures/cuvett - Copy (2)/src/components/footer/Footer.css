@@ -1,0 +1,35 @@
+
+.formContainer{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 500px;
+    background-color:rgb(237, 237, 171);
+    
+}
+
+.formContainer h2{
+    padding-top:20px ;
+   font-weight: bold;
+    text-align: center;
+}
+.formContainer .formarea{
+    display: flex;
+    flex-direction:column;
+    padding: 20px;
+    width: 80%;
+    
+}
+
+.formContainer .formarea , input , textarea , button{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border:1px soid red;
+}
+
+ .formarea button{
+    width: 20%;
+    font-weight: 500;
+    background-color:greenyellow
+}
