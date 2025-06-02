@@ -6,16 +6,20 @@ import About from './pages/About'
 import Footer from './pages/Footer'
 
 import {BrowserRouter as Router ,Routes , Route} from "react-router-dom";
-import Form from './pages/Form'
+// import Form from './pages/Form'
 import Api from './pages/Api'
 import UserForm from './basicCrud/UserForm'
+import Form from './basicCrud/Form/Form'
+import Table from './basicCrud/Table/Table'
 
 const App = () => {
   return (
     <>
     {/* <Form/> */}
     {/* <Api/> */}
-    <UserForm/>
+    {/* <UserForm/> */}
+     <Form/>
+     <Table/>
      {/* <Router>
        <Routes>
         <Route path="/" element={<Home/>}/>
